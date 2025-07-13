@@ -10,7 +10,7 @@ class VideoCallScreen extends StatefulWidget {
 }
 
 class _VideoCallScreenState extends State<VideoCallScreen> {
-  static const String appId = "YOUR_AGORA_APP_ID"; // Agora App ID'nizi buraya ekleyin
+  static const String appId = ""; // Agora App ID buraya eklenecek
   static const String channelName = "ilayda_umit_channel";
   
   late RtcEngine _engine;
@@ -26,6 +26,18 @@ class _VideoCallScreenState extends State<VideoCallScreen> {
   }
 
   Future<void> initAgora() async {
+    // Agora App ID kontrolü
+    if (appId.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(
+          content: Text('Agora App ID yapılandırılmamış. Video arama özelliği kullanılamaz.'),
+          backgroundColor: Colors.red,
+        ),
+      );
+      Navigator.pop(context);
+      return;
+    }
+
     // Mikrofon ve kamera izinlerini iste
     await [Permission.microphone, Permission.camera].request();
 

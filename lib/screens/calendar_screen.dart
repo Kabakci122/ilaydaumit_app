@@ -32,7 +32,8 @@ class _CalendarScreenState extends State<CalendarScreen> {
   }
 
   List<Event> _getEventsForDay(DateTime day) {
-    // Bu fonksiyon Firebase'den etkinlikleri çekecek
+    // Firebase'den etkinlikleri çek
+    // Şimdilik boş liste döndür, gerçek implementasyon StreamBuilder ile yapılacak
     return [];
   }
 
