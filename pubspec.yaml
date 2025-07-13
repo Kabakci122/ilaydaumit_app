@@ -1,0 +1,22 @@
+name: ilaydaumit
+description: İlayda ve Ümit için özel uygulama
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^2.0.0
+  firebase_auth: ^4.0.0
+  cloud_firestore: ^4.0.0
+  firebase_storage: ^11.0.0
+  shared_preferences: ^2.0.0
+  permission_handler: ^10.0.0
+  agora_rtc_engine: ^6.2.6
+  image_picker: ^1.0.4
+  table_calendar: ^3.0.0
+
+flutter:
+  uses-material-design: true

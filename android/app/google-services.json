@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "256013214488",
+    "project_id": "ilaydaumit-f23d5",
+    "storage_bucket": "ilaydaumit-f23d5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:256013214488:android:620afddbe90c7337ba346d",
+        "android_client_info": {
+          "package_name": "com.kabakci.ilaydaumit"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQ5kTESYadM8oSDEf1n9j3n4X7CTUYWF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
